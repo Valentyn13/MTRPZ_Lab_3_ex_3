@@ -25,5 +25,6 @@ CMD ["node","index.js"]
 ```
  Сама команда запуску
 ```
+docker build .
 docker run -p 80:3000 <your image id>
 ```
