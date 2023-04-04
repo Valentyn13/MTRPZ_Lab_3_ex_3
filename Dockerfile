@@ -1,12 +1,13 @@
-FROM node
+FROM node:10-slim
 
 WORKDIR /app
 
-COPY . .
+COPY package*.json ./
 
 RUN npm install
+
+COPY . .
 
 EXPOSE 3000
 
 CMD ["node","index.js"]
-
